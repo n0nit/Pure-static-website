@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main  # Change to your branch if different
 
 media_folder: "materials" # Stores uploaded PDFs
