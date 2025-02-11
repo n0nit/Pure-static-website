@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main  # Change this if your branch is different
+
+media_folder: "attached_assets" # This is where images will be stored
+public_folder: "/attached_assets"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "blogs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "materials"
+    label: "Study Materials"
+    folder: "materials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Upload File", name: "file", widget: "file" }
+      - { label: "Description", name: "description", widget: "text" }
