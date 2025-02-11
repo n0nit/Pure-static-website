@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read academic blogs on history, economics, political science, religion, and society. Expert insights and analysis from The Polis Mindset.">
+    <meta name="keywords" content="academic blogs, political science blogs, history blogs, economics blogs, humanities articles">
+    <meta name="author" content="Nonit Tilokani">
+    <meta name="robots" content="index, follow">
+    <title>Academic Blogs - The Polis Mindset</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="brand-title">The Polis Mindset</div>
+            <div class="brand-author">Nonit Tilokani</div>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="index.html">Blogs</a>
+            <a href="../materials/index.html">Study Materials</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Academic Blogs</h1>
+        <div class="admin-controls">
+            <button id="newBlogBtn" class="admin-btn" style="display: none;">New Blog Post</button>
+        </div>
+        <div class="blog-container">
+            <article class="blog-preview">
+                <h2><a href="orwellian-state.html">Orwellian State</a></h2>
+                <p class="blog-meta">Posted on February 9, 2025</p>
+                <p>How the current governments around the globe are heading towards an Orwellian State.</p>
+                <div class="admin-controls">
+                    <button class="admin-btn edit-btn" style="display: none;">Edit</button>
+                    <button class="admin-btn delete-btn" style="display: none;">Delete</button>
+                </div>
+            </article>
+        </div>
+    </main>
+    <script src="../js/auth.js"></script>
+    <script>
+        window.onload = async () => {
+            const adminControls = document.querySelectorAll('.admin-controls');
+            adminControls.forEach(control => requireOwner(control));
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 The Polis Mindset. All rights reserved.</p>
+    </footer>
+</body>
+</html>
