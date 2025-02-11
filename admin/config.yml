@@ -1,13 +1,13 @@
 backend:
   name: git-gateway
-  branch: main  # Change this if your branch is different
+  branch: main  # Change to your branch if different
 
-media_folder: "attached_assets" # This is where images will be stored
-public_folder: "/attached_assets"
+media_folder: "materials" # Stores uploaded PDFs
+public_folder: "/materials"
 
 collections:
-  - name: "blog"
-    label: "Blog Posts"
+  - name: "blogs"
+    label: "Blogs"
     folder: "blogs"
     create: true
     slug: "{{slug}}"
@@ -23,5 +23,5 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Upload File", name: "file", widget: "file" }
+      - { label: "Upload PDF", name: "file", widget: "file" }
       - { label: "Description", name: "description", widget: "text" }
