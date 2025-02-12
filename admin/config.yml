@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: n0nit/Pure-static-website
+  name: git-gateway
   branch: main  # Change to your branch if different
 
 media_folder: "materials" # Stores uploaded PDFs
