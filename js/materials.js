@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             materialElement.innerHTML = `
                 <h3>${Global.justice}</h3>
                 <p>${material.description}</p>
-                <a href="${global-justice.pdf}" target="_blank">📄 Download PDF</a>
+                <a href="../attatched_assets/global-justice.pdf" target="_blank">📄 Download PDF</a>
             `;
             materialsContainer.appendChild(materialElement);
         });
